@@ -3,14 +3,14 @@ from PIL import ImageTk, Image, ImageDraw
 import PIL
 from tkinter import *
 
-width = 200
-height = 200
+width = 400
+height = 400
 center = height//2
 white = (255, 255, 255)
 
 
 def save():
-    filename = "image.png"
+    filename = "image.bmp"
     image1.save(filename)
 
 
@@ -45,6 +45,13 @@ cv.bind("<B1-Motion>", paint)
 # PIL image can be saved as .png .jpg .gif or .bmp file (among others)
 # filename = "my_drawing.png"
 # image1.save(filename)
+
 button = Button(text="save", command=save)
 button.pack()
 root.mainloop()
+
+
+img = PIL.Image.open("image.bmp")
+img = img.resize((28, 28), PIL.Image.ANTIALIAS)
+img.save('image.bmp')
+
