@@ -21,13 +21,44 @@ import numpy as np
 
 data = np.load('../data/all_data.npy')
 print(len(data))
+batches = []
 
+for i in range(0, len(data), 17):
+    
+
+def batch_maker(start, end):
+    batch = []
+    i = start
+    for i in range(end):
+        batch.append(i)
+    batches.append(batch)
+    return
+
+
+def sigmoid(x):
+    return 1/(1 + np.exp(-x))
+
+
+def sigmoid_derivate(x):
+    return (np.exp(-x))/((1+np.exp(-x)) ^ 2)
+
+
+def feed_forward():
+    return
+
+
+def back_propagation():
+    return
+
+
+def cost(prediction, result):
+    return
+
+
+def cost_gradient():
+    return
 
 
 peso1 = np.random.randn()
 peso2 = np.random.randn()
 bias = np.random.randn()
-
-
-def sigmoid(x):
-    return 1/(1 + np.exp(-x))
