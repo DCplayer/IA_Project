@@ -1,5 +1,58 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import random
+
+
+class RR(object):
+    def __init__(self, tamanios):
+        self.capas = len(tamanios)
+        self.tamanios = tamanios
+        self.biases = []
+        self.weight = []
+        self.assign_value()
+        self.assign_weights()
+
+    def assign_value(self):
+        i = 1
+        for i in range(len(self.tamanios)):
+            random = np.random.randn(i, 1)
+            self.biases.append(random)
+
+    def assign_weights(self):
+        for x, y in zip(self.tamanios[:-1], self.tamanios[1:]):
+            random = np.random.rand(x, y)
+            self.weight.append(random)
+        return
+
+    def feed_forward(self, input):
+        for b, w in zip(self.biases, self.weight):
+            a = sigmoid(np.dot(w, a) + b)
+        return a
+
+    def cost_gradient(self, neuronas, expectancy):
+        return neuronas - expectancy
+
+    def delta_precision(self, resultado, experanza):
+        test_results = [(np.argmax(self.feed_forward(x)), y)
+                       for (x, y) in resultado]
+        return sum(int(x == y) for (x, y) in test_results)
+
+
+def sigmoid(x):
+    return 1/(1 + np.exp(-x))
+
+
+def sigmoid_derivate(x):
+    return sigmoid(x) * (1-sigmoid(x))
+
+
+
+
+def back_propagation():
+    return
+
+
+
 
 
 #Se usara la formula de
@@ -20,45 +73,22 @@ import numpy as np
 #       Ns      = 577672
 
 data = np.load('../data/all_data.npy')
-print(len(data))
+cant_data = len(data)
 batches = []
 
-for i in range(0, len(data), 17):
-    
+#PArtir en 3 el dataset y revolverlo
+int1 = int(np.round(0.70*cant_data))
+int2 = int(np.round(0.85*cant_data))
+int3 = cant_data -1
 
-def batch_maker(start, end):
-    batch = []
-    i = start
-    for i in range(end):
-        batch.append(i)
-    batches.append(batch)
-    return
+np.random.shuffle(data)
 
+train = data[:int1]
+test = data[int1:int2]
+CV = data[int2:]
 
-def sigmoid(x):
-    return 1/(1 + np.exp(-x))
+RR([784, 189, 91, 10])
 
 
-def sigmoid_derivate(x):
-    return (np.exp(-x))/((1+np.exp(-x)) ^ 2)
 
 
-def feed_forward():
-    return
-
-
-def back_propagation():
-    return
-
-
-def cost(prediction, result):
-    return
-
-
-def cost_gradient():
-    return
-
-
-peso1 = np.random.randn()
-peso2 = np.random.randn()
-bias = np.random.randn()
