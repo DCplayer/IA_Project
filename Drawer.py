@@ -67,8 +67,11 @@ for col in array_content:
         row = (255 - row) / 255.0
 
 input = array_content.reshape(784, 1)
-red = RR([5, 4, 3, 2])
+red = RR([784, 189, 91, 10])
 
+
+
+red.descensograd()
 
 #Se usara la formula de
 #       Nh = (Ns)/(alpha * (Ni + No)), donde

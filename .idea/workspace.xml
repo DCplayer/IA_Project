@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d97e9d9-9918-4f21-a722-e4f2382f8544" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/IA_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IA_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Drawer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gym.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/image.bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/red.py" beforeDir="false" afterPath="$PROJECT_DIR$/red.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Drawer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-814">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="285">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="e#1#42#0" expanded="true" />
               </folding>
@@ -24,14 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/red.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
             </state>
           </provider>
         </entry>
@@ -49,6 +52,7 @@
     <findStrings>
       <find>save</find>
       <find>image1</find>
+      <find>ingreso</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -58,8 +62,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="D:/Downloads/test.py" />
-        <option value="$PROJECT_DIR$/Drawer.py" />
         <option value="$PROJECT_DIR$/red.py" />
+        <option value="$PROJECT_DIR$/Drawer.py" />
       </list>
     </option>
   </component>
@@ -74,6 +78,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -85,7 +90,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,15 +194,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="0" y="30" width="1366" height="700" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12606838" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1787044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33150986" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33046472" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39896372" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,28 +238,23 @@
   <component name="editorHistoryManager">
     <entry file="file://D:/Downloads/test.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.687/conv.py" />
-    <entry file="file://$PROJECT_DIR$/image.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/image.png" />
     <entry file="file://$PROJECT_DIR$/image.bmp">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Drawer.py">
+    <entry file="file://$PROJECT_DIR$/red.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-814">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#1#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/red.py">
+    <entry file="file://$PROJECT_DIR$/Drawer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="285">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#1#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
