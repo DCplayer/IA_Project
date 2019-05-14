@@ -1,11 +1,13 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import copy
 
 class RR:
     def __init__(self, tamanio):
         self.weigths = []
         self.biases = []
-
+        self.alphas = []
+        self.deltas = []
 
         if len(tamanio) > 1:
             for i in range(len(tamanio) - 1):
@@ -26,3 +28,24 @@ class RR:
             a = self.sigmoid((self.weigths[i] @ x) + self.biases[i])
             x = a
         return x
+
+    def backpropagation(self, ingreso, prediction):
+        counter = 0
+        d = 0
+        for i in range(len(self.weigths)):
+            a = self.sigmoid((self.weigths[i] @ ingreso) + self.biases[i])
+            self.alphas.append(a)
+            ingreso = copy.deepcopy(a)
+
+            if counter == 0:
+                counter = counter + 1
+                d = self.alphas[len(self.alphas) - 1] - prediction
+                self.deltas.append(d)
+            else:
+                d = np.transpose(self.weigths[i]) @ self.deltas[i - 1] * self.alphas[i] * (1 - self.alphas[i])
+                self.deltas.append(d)
+        self.deltas.reverse()
+
+    def descenso_grad(self):
+        pass
+
