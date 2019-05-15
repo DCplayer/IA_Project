@@ -4,7 +4,6 @@ import PIL
 from tkinter import *
 import numpy as np
 
-from red import RR
 
 width = 400
 height = 400
@@ -67,11 +66,7 @@ for col in array_content:
         row = (255 - row) / 255.0
 
 input = array_content.reshape(784, 1)
-red = RR([784, 189, 91, 10])
 
-
-
-red.descensograd()
 
 #Se usara la formula de
 #       Nh = (Ns)/(alpha * (Ni + No)), donde

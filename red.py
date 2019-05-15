@@ -50,6 +50,7 @@ class RR:
             self.alphas.append(a)
             ingreso = copy.deepcopy(a)
 
+        for i in range(len(self.weigths)):
             if counter == 0:
                 counter = counter + 1
                 d = self.alphas[len(self.alphas) - 1] - prediction
@@ -61,8 +62,9 @@ class RR:
 
         lista = copy.deepcopy(self.alphas)
         self.alphas.clear()
-        for i in range(len(self.deltas) -1):
+        for i in range(len(self.deltas)):
             self.alphas.append(self.deltas[i] @ np.transpose(lista[i]))
+
 
     def descensograd(self, training, test, cross, rate, iter):
         k = rate / len(training)
@@ -88,5 +90,5 @@ class RR:
             gradient_weights.clear()
             gradient_biases.clear()
 
-        print("cross_validation: {}%".format(self.success(cross) / len(cross) * 100))
-        print("test_validation: {}%".format(self.success(test) / len(test) * 100))
+            print("cross_validation: {}%".format(self.validation(cross) / len(cross) * 100))
+            print("test_validation: {}%".format(self.validation(test) / len(test) * 100))
